@@ -82,7 +82,7 @@ This project is a chess-like game featuring custom characters with distinct move
 
 - Hero2: Moves two blocks diagonally; kills opponents in its path.
 
-- Hero3: Moves 2 steps straight and 1 step to the side in any direction; kills only the character at its final landing position.
+- Hero3: Moves 2 steps straight and 1 step to the side in any direction; kills only the character at its final landing position.(Bonus feature)
 
 
 ## Screenshots
