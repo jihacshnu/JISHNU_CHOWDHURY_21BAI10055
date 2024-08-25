@@ -1,0 +1,142 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#moveHistoryHeader {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+#moveHistory {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid #444;
+    text-align: left;
+
+    /* Align text to the left for better readability */
+}
+
+/* Center the header */
+h1 {
+    margin: 0 0 20px 0;
+    /* Add bottom margin to separate it from the game board */
+}
+
+/* Center the game board */
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 2px;
+    background-color: #333;
+    padding: 5px;
+}
+
+/* Style for each cell */
+/* General styles for cells */
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Colors for Player A's characters */
+.playerA-Pawn {
+    color: #1e90ff;
+    /* DodgerBlue */
+}
+
+.playerA-Hero1 {
+    color: #32cd32;
+    /* LimeGreen */
+}
+
+.playerA-Hero2 {
+    color: #ff8c00;
+    /* DarkOrange */
+}
+
+/* Colors for Player B's characters */
+.playerB-Pawn {
+    color: #ff6347;
+    /* Tomato */
+}
+
+.playerB-Hero1 {
+    color: #8a2be2;
+    /* BlueViolet */
+}
+
+.playerB-Hero2 {
+    color: #dc143c;
+    /* Crimson */
+}
+
+/* Move options section */
+#moveOptions {
+    margin-top: 20px;
+}
+
+/* Style for buttons */
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style for button hover */
+button:hover {
+    background-color: #777;
+}
+
+#currentPlayer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Player A color */
+.playerA {
+    color: #1e90ff;
+    /* DodgerBlue */
+}
+
+/* Player B color */
+.playerB {
+    color: #ff6347;
+    /* Tomato */
+}
+
+ #gameEndMessage {
+     display: none;
+     margin: 20px auto;
+     text-align: center;
+ }

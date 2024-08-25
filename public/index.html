@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGrid Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Grid Game</h1>
+    <h1 id="currentPlayer" class="playerA">Player A's Turn</h1>
+    <p id="status">Select your characters</p>
+
+    <div id="characterSelection">
+      <div id="playerASelection" style="display: none">
+        <h2>Player A - Select Your Characters (5 total)</h2>
+        <button onclick="selectCharacter('P1')">Pawn 1</button>
+        <button onclick="selectCharacter('P2')">Pawn 2</button>
+        <button onclick="selectCharacter('P3')">Pawn 3</button>
+        <button onclick="selectCharacter('H1')">Hero 1</button>
+        <button onclick="selectCharacter('H2')">Hero 2</button>
+        <button onclick="selectCharacter('H3')">Hero 3</button>
+        <p id="selectedCharactersA">Selected: None</p>
+        <button onclick="submitSelection('A')">Submit Selection for A</button>
+      </div>
+      <div id="playerBSelection" style="display: none">
+        <h2>Player B - Select Your Characters (5 total)</h2>
+        <button onclick="selectCharacter('P1')">Pawn 1</button>
+        <button onclick="selectCharacter('P2')">Pawn 2</button>
+        <button onclick="selectCharacter('P3')">Pawn 3</button>
+        <button onclick="selectCharacter('H1')">Hero 1</button>
+        <button onclick="selectCharacter('H2')">Hero 2</button>
+        <button onclick="selectCharacter('H3')">Hero 3</button>
+        <p id="selectedCharactersB">Selected: None</p>
+        <button onclick="submitSelection('B')">Submit Selection for B</button>
+      </div>
+      <button onclick="startSelectionForPlayer('A')">
+        Start Selection for Player A
+      </button>
+      <button onclick="startSelectionForPlayer('B')">
+        Start Selection for Player B
+      </button>
+    </div>
+
+    <div id="gameBoard"></div>
+    <div id="moveOptions"></div>
+    <div id="moveHistorySection">
+      <h2 id="moveHistoryHeader">Move History</h2>
+      <div id="moveHistory"></div>
+    </div>
+  <div id="gameEndMessage">
+    <p id="winnerMessage"></p>
+    <button onclick="startAgain()">Start Again</button>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
